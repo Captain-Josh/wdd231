@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+
+/********************* Header *********************/
+header{
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    align-items: end;
+    padding: 5px 0 5px 10px;
+    border: 1px solid #ddd;
+    column-gap: 10px;
+    
+}
+header img{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+header span{
+    font-size: 1.2rem;
+    color: #000080;
+}
+/********************* Hamburger Menu *********************/
+#ham-menu{
+    background-color: #000080;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+#bars{
+    background-color: #fff;
+    width: 80%;
+    height: 3px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    transition: all 0.4s ease;
+}
+
+#bars::before{
+    content: "";
+    background-color: #fff;
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    transform: translateY(-8px);
+
+}
+#bars::after{
+    content: "";
+    background-color: #fff;
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    transform: translateY(8px);
+
+}
+
+.show #bars{
+    background-color: transparent;
+    transform: rotate(180deg);
+}
+.show #bars::before{
+    transform: translate(0) rotate(-45deg);
+}
+.show #bars::after{
+    transform: translate(0) rotate(45deg);
+}
+
+/********************* Navigation *********************/
+.navigation{
+    display: none;
+ }
+
+.navigation.show{
+    display: block;
+}
+
+.navigation ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navigation a{
+    display: block;
+    padding: 10px 10px;
+    color: #3D4058;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+}
+
+.navigation li.current{
+    background-color: #eee;
+}
+.navigation a:hover{
+    background-color:#fbff2b;
+}
+h1{
+    margin-left: 10px;
+}
+
+/********************* FOOTER *********************/
+footer{
+    background-color: #eee;
+    padding: 16px 10px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.social{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+
+}
+.social a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+}
+.social a:hover{
+   background-color: #ddd;
+}
+
+.social img{
+    width: 22px;
+    height: 22px;
+}
