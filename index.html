@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Home Page</title>
+    <meta name="author" content="Nweke Joshua">
+    <meta name="description" content="Explore my work, projects, and background. Visit my latest project and learn more about who I am, what I build, and also my group project.">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Miranda+Sans:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Titillium+Web:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="scripts/course.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/book.svg" alt="Site Logo" width="512" height="512">
+        <span>Nweke Joshua Site</span>
+
+    <div id="hamburger">
+        <div id="bars"></div>
+    </div>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li ><a href="#">Chamber</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>
+            Home
+        </h1>
+        <section id="about">
+            <div class="about-me">
+                <h2>About Me</h2>
+                <span>My name is Nweke Joshua but my friends call me Captain Josh, this is because of my passion for the Military. I am a member of The Church of Jesus Christ of Latter-Days Saints, embracing the gospel is the best decision i have taken and it has been a blessing to me. I love watching military parades video.</span>
+            </div>
+
+            <div class="photo">
+                <h2>My Photo</h2>
+                <div id="photo">
+                    <img src="images/my-photo.webp" alt="My Photo" width="140" height="140">
+
+                </div>
+            </div>
+        </section>
+        <section id="courses">
+            <h2>Web Certificate Courses</h2>
+            <div class="option">
+                <button class="btn" id="all" type="button">ALL</button>
+                <button class="btn" id="cse" type="button">CSE</button>
+                <button class="btn" id="wdd" type="button">WDD</button>
+            </div>
+            <div id="course-list">
+            </div>
+            <div id="totalCredit"></div>
+            
+        </section>
+
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://x.com/?lang=en" target="_blank"><img src="images/twitter-x.svg" alt="Twitter" width="16" height="16"></a>
+            <a href="https://github.com/" target="_blank"><img src="images/github.svg" alt="github" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
+        </div>
+        <p>©️ <span class="currentyear"></span> 🌸Nweke Joshua</p>
+        <p class="lastmodified"></p>
+    </footer>
+</body>
+</html>
