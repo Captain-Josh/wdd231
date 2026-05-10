@@ -113,19 +113,16 @@ function displayCourseList(course){
 }
 
 document.getElementById("all").addEventListener("click",()=>{
-    console.log(courses)
     displayCourseList(courses);
 })
 
 document.getElementById("cse").addEventListener("click",()=>{
     const cseCourses = courses.filter(course=> course.subject === 'CSE');
-    console.log(cseCourses);
     displayCourseList(cseCourses);
 })
 
 document.getElementById("wdd").addEventListener("click",()=>{
     const wddCourses = courses.filter(course=> course.subject === 'WDD');
-     console.log(wddCourses);
     displayCourseList(wddCourses);
 })
 
