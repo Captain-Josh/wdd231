@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    font-size: 30px;
+    color: #000080;
+    margin: 10px 0;
+}
+
+#cards{ 
+	display: grid;
+	gap: 10px;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    background-color: #dfd8d8;
+}
+section{
+    padding: 15px 15px 10px 15px;
+    text-align: center;
+    background-color: #eee;
+}
+section h2{
+    color: #000080;
+    font-weight: 700;
+}
+section img{
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow:0 4px 10px rgba(0, 0, 0, 0.4);
+    object-fit: cover;
+
+}
