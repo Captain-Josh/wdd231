@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #ffffff;
+    --secondary-color:#000000;
+    --tertiary-color:#a4161a ;
+    --accent1-color:#000080;
+    --accent2-color:#FFD700;
+    --accent3-color:#ffffff;
+    --accent4-color: #a4161a;
+    --accent5-color:#2D6A4F;
+    --accent6-color:#eee;
+    --border:2px solid rgb(0 0 0/0.2);
+    --border-color: 2px solid #ddd;
+    --body-font: "Roboto", sans-serif;
+}
+body{
+    font-family:  var(--body-font);
+}
+
+/********************* Header *********************/
