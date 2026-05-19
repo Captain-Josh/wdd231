@@ -8,7 +8,7 @@
 
     <meta property="og:title" content="Lagos Chamber of Commerce">
     <meta property="og:description" content="Browse our chamber of commerce business directory. Discover local businesses, service , and networking opportunities in Lagos.">
-    <meta property="og:url" content="https://captain-josh.github.io/wdd231/chamber">
+    <meta property="og:url" content="https://captain-josh.github.io/wdd231/chamber/directory.html">
     <meta property = "og:images" content="https://captain-josh.github.io/wdd231/chamber/images/og-image.png">
     <title>Lagos Chamber of Commerce</title>
     <link rel="stylesheet" href="styles/normalize.css">
@@ -21,7 +21,53 @@
 
     <script src="scripts/chamber.js" defer></script>
 </head>
-<body>
+<body id="directory-page">
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Project Logo">
+            <span>Lagos Chamber of Commerce</span>
+        </div>
+        <div id="ham-menu">
+            <div id="bars"></div>
+        </div>
+
+        <nav  class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li id="current"><a href="#" >Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="dicover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
     
+    <ul id="nav-mobile">
+        <li><a href="index.html">Home</a></li>
+        <li id="current"><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="dicover.html">Discover</a></li>
+    </ul>
+
+    <main>
+        <div id="members"></div>
+    </main>
+
+        <footer>
+            <div id="address">
+                <span>Lagos Chamber of Commerce</span>
+                <p>18 Allen avenue <br> Ikeja, Lagos 31309 <br> info@lcc.org <br>(234) 555-2300</p>
+            </div>
+        <div class="social">
+            <a href="https://x.com/?lang=en" target="_blank"><img src="images/twitter-x.svg" alt="Twitter" width="16" height="16"></a>
+            <a href="https://github.com/" target="_blank"><img src="images/github.svg" alt="github" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
+        </div>
+
+        <div>
+            <p>WDD231 Class Project<br> Nweke Joshua <br> ©️ <span id="currentyear"></span> Lagos Chamber of Commerce</p>
+            <p id="lastmodified"></p>
+        </div>
+    </footer>
+
 </body>
 </html>

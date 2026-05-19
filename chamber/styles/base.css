@@ -22,4 +22,190 @@ body{
     font-family:  var(--body-font);
 }
 
+/********************* Hamburger Menu *********************/
+#ham-menu {
+    width: 44px;
+    height: 44px;
+    background: var(--accent5-color);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:all 0.4s ease;
+}
+#bars{
+    width: 80%;
+    height: 3px;
+    background-color: var(--accent3-color);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    transition: all 0.4s ease;
+}
+
+#bars::before{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: var(--accent3-color);
+    position: absolute;
+    transform: translateY(-8px);
+}
+#bars::after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: var(--accent3-color);
+    position: absolute;
+    transform: translateY(8px);
+}
+
+.show #bars{
+    background-color: transparent;
+    transform: rotate(180deg);
+}
+.show #bars::before{
+    transform: translate(0) rotate(-45deg);
+}
+.show #bars::after{
+    transform: translate(0) rotate(45deg);
+}
+
+
 /********************* Header *********************/
+header{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin: 10px;
+    border: var(--border-color);
+    gap: 10px;
+}
+header .logo{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+}
+.logo img{
+    width: 60px;
+    height: auto;
+    padding-bottom: 3px;
+}
+
+.logo span{
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--tertiary-color);
+
+}
+
+
+/********************* FOOTER *********************/
+.navigation{
+    display: none;
+}
+
+#nav-mobile{
+    display: block;
+    position: absolute;
+    background-color: var(--accent4-color);
+    width: 100%;
+    top: -100%;
+    transition:0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#nav-mobile.show{
+    top: 80px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul a{
+    display: block;
+    padding: 10px;
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+#current a::before{
+    content: "✔️ ";
+}
+
+ a:hover{
+    background-color:var(--accent3-color);
+    color: var(--secondary-color);
+}
+/********************* Directory*********************/
+
+#members{ 
+	display: grid;
+	gap: 10px;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border:var(--border);
+    background-color: var(--accent3-color);
+}
+section{
+    padding: 15px 15px 10px 15px;
+    text-align: center;
+    background-color: var(--accent6-color);
+}
+section h2{
+    color: var(--tertiary-color);
+    font-weight: 700;
+}
+section img{
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow:0 4px 10px rgba(0, 0, 0, 0.4);
+    object-fit: cover;
+
+}
+
+
+/********************* FOOTER *********************/
+footer{
+    padding: 16px 10px;
+    line-height: 30px;
+    text-align: left;
+    color:var(--secondary-color);
+    background-color: var(--accent6-color);
+}
+
+
+#address span{
+    font-weight: 500;
+}
+.social{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15px;
+
+}
+.social a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height:80px;
+    border-radius: 50%;
+}
+.social a:hover{
+   background-color: var(--accent2-color);
+}
+
+.social img{
+    width: 44px;
+    height: 44px;
+}
