@@ -15,7 +15,7 @@ hamburger.addEventListener("click", ()=>{
 document.addEventListener("DOMContentLoaded", ()=>{
     if(document.getElementsByTagName("body")[0].id === "directory-page"){
 
-        const url = "../data/members.json"
+        const url = "data/members.json"
         const cards = document.querySelector("#members")
         
         const getMembersData = async()=>{

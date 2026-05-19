@@ -26,6 +26,7 @@
     nav li.current a{
     background-color: var(--accent5-color);
     color: var(--primary-color);
+    border-radius: 10px;
 }
 
      .navigation a{
