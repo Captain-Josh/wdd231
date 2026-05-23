@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+a,button{
+   -webkit-tap-highlight-color: transparent;
+}
 
 :root{
     --primary-color: #ffffff;
@@ -101,7 +104,7 @@ header .logo{
 }
 
 
-/********************* FOOTER *********************/
+/********************* Navigation*********************/
 .navigation{
     display: none;
 }
@@ -149,7 +152,9 @@ ul a{
     color: var(--tertiary-color);
     margin: 10px 0;
 }
-#members{ 
+
+
+.now-grid{
 	display: grid;
 	gap: 10px;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -159,22 +164,80 @@ ul a{
     border:var(--border);
     background-color: var(--accent3-color);
 }
-section{
+
+.grid-member{
     padding: 15px 15px 10px 15px;
     text-align: center;
     background-color: var(--accent6-color);
 }
-section h2{
+.grid-member h2{
     color: var(--tertiary-color);
     font-weight: 700;
 }
-section img{
+.grid-member strong {
+    color: var(--tertiary-color);
+}
+.grid-member img{
     margin-top: 10px;
     width: 100%;
     border-radius: 12px;
     box-shadow:0 4px 10px rgba(0, 0, 0, 0.4);
     object-fit: cover;
 
+}
+
+
+.now-list .grid-member {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 1.5fr 2fr;
+    padding: 12px;
+    align-items: center;
+    text-align: left;
+
+}
+.now-list .grid-member h2{
+    color: var(--secondary-color);
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.now-list .grid-member:nth-child(odd){
+    background-color: var(--accent6-color);
+}
+
+.now-list .grid-member:nth-child(even){
+    background-color: var(--accent3-color);
+}
+.now-list img,.now-list strong, .now-list #mem-description, .now-list #mem-level {
+    display: none;
+}
+
+
+
+/********************* Directory Btn*********************/
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+    margin: 20px 0;
+}
+.styled-button{
+    background-color: var(--primary-color); 
+    border: none; 
+    border-radius: 10px; 
+    padding: 15px; 
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  
+}
+.styled-button img {
+    width: 40px; 
+    height: 40px;
+}
+
+.styled-button:hover {
+background-color: var(--accent6-color);
 }
 
 
