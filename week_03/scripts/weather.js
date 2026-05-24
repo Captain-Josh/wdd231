@@ -26,7 +26,7 @@ apiFetch()
 
 function displayResults(data){
     currentTemp.innerHTML =`
-    ${data.main.temp.toFixed(1)}&deg;C`;
+    ${data.main.temp.toFixed(1)}&deg;F`;
 
     const description = data.weather[0].description;
     captionDesc.textContent = description;
