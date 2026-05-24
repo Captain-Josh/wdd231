@@ -30,6 +30,6 @@ const byuiCourse = {
         this.sections[sectionIndex].enrolled--;
       }
     }
-  },
-}
+  }
+};
 export default byuiCourse;
