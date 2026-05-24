@@ -193,6 +193,7 @@ ul a{
     padding: 12px;
     align-items: center;
     text-align: left;
+    gap: 10px;
 
 }
 .now-list .grid-member h2{
