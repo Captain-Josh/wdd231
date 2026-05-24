@@ -194,6 +194,7 @@ ul a{
     align-items: center;
     text-align: left;
     gap: 10px;
+    width: 100%;
 
 }
 .now-list .grid-member h2{
