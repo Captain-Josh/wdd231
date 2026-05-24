@@ -41,6 +41,14 @@
     border-radius: 10px;
 }
 
+.now-list .grid-member {
+    grid-template-columns: 1.5fr 2fr 1.5fr 2fr;
+}
+
+.now-list strong{
+    display: none;
+}
+
 /********************* FOOTER *********************/
 footer{
     display: grid;
