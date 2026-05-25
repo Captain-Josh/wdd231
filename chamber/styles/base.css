@@ -161,6 +161,8 @@ ul a{
     color: var(--primary-color);
     background-color: rgba(0, 0, 0, 0.5);
     font-size: 20px;
+    padding: 8px 12px;
+    border-radius: 8px;
 }
 #home-btn{
     position: absolute;
@@ -177,15 +179,6 @@ ul a{
     width: 100%;
     height: auto;
 }
-
-#hero-h1{
-    color: var(--primary-color);
-    background-color: rgba(0, 0, 0, 0.5);
-    font-size: 20px;
-    padding: 8px 12px;
-    border-radius: 8px;
-}
-
 
 
 #home-btn{
