@@ -183,7 +183,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
             try{
                 const response = await fetch(myUrl);
                 const data = await response.json();
-                console.log("API Response:", data);
                 displaySpotlights(data);
             }
             catch (error){
