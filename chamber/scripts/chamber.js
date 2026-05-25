@@ -145,10 +145,12 @@ document.addEventListener("DOMContentLoaded", ()=>{
             captionDesc.textContent = description;
 
             const icon =current.weather[0].icon;
+
             const iconSrc = `https://openweathermap.org/img/wn/${icon}@2x.png`;
             
         weatherIcon.setAttribute("src", iconSrc);
         weatherIcon.setAttribute("alt", description);
+        weatherIcon.hidden = false;
 
 
         const forecastContainer = document.getElementById("forecast");
