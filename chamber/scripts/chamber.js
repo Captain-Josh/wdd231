@@ -148,7 +148,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
             const iconSrc = `https://openweathermap.org/img/wn/${icon}@2x.png`;
             
         weatherIcon.setAttribute("src", iconSrc);
-        weatherIcon.setAttribute("alt", "weather-icon");
+        weatherIcon.setAttribute("alt", description);
 
 
         const forecastContainer = document.getElementById("forecast");

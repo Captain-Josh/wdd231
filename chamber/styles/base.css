@@ -164,11 +164,6 @@ ul a{
     padding: 8px 12px;
     border-radius: 8px;
 }
-#home-btn{
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-}
 
 #home-page{
    width: 90%;
@@ -190,6 +185,9 @@ ul a{
     font-size: large;
     text-decoration: none;
     align-self: center;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
 }
 #home-btn:hover{
     color: var(--tertiary-color);
