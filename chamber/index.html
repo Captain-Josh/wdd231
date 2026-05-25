@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Lagos Chamber of Commerce connects businesses, promotes economic growth, and provides resources, events, and opportunities for entrepreneurs and organizations in Lagos, Nigeria.">
+    <meta name="author" content="Nweke Joshua">
+
+    <meta property="og:title" content="Lagos Chamber of Commerce | Home">
+    <meta property="og:description" content="Discover the Lagos Chamber of Commerce, your gateway to business growth, networking opportunities, and economic development in Lagos, Nigeria.">
+    <meta property="og:url" content="https://captain-josh.github.io/wdd231/chamber/index.html">
+    <meta property="og:image" content="https://captain-josh.github.io/wdd231/chamber/images/og-image.png">
+    <title>Lagos Chamber of Commerce| Home</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="images/logo.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Miranda+Sans:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Titillium+Web:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+
+    <script src="scripts/chamber.js" defer></script>
+    
+</head>
+<body id="home-page">
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Project Logo">
+            <span>Lagos Chamber of Commerce</span>
+        </div>
+        <div id="ham-menu">
+            <div id="bars"></div>
+        </div>
+
+        <nav  class="navigation">
+            <ul>
+                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="directory.html" >Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="dicover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <ul id="nav-mobile">
+        <li class="current"><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="dicover.html">Discover</a></li>
+    </ul>
+    <main>
+        <section id="hero">
+            <picture class="hero">
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 600px)">
+                <img src="images/hero-small.webp" alt="Image Background Image" width="600" height="300">
+            </picture>
+
+            <h1 id="hero-h1">
+                Lagos Chamber<br>of Commerce
+            </h1>
+            <a href="join.html" id="home-btn">Join the Chamber</a>
+
+        </section>
+
+        <section id="home-grid">
+            
+            <section class="events">
+            <h2>Events</h2>
+
+            <div class="event-container">
+                <div class="event">
+                    <h3>Lagos Business Networking Mixer</h3>
+                    <p><strong>Date:</strong> June 15, 2026</p>
+                    <p>Join local entrepreneurs and business leaders for networking and collaboration.</p>
+                </div>
+    
+                <div class="event">
+                    <h3>SME Growth & Marketing Workshop</h3>
+                    <p><strong>Date:</strong> June 22, 2026</p>
+                    <p>Learn strategies to grow your business and reach more customers.</p>
+                </div>
+    
+                <div class="event">
+                    <h3>Business Leadership Summit</h3>
+                    <p><strong>Date:</strong> July 5, 2026</p>
+                    <p>Attend keynote sessions from top business leaders.</p>
+                </div>
+            </div>
+
+            </section>
+
+            <div class="weather">
+                <h2>Current Weather</h2>
+                <div id="current-weather">
+                    <p>Lagos Nigeria <span id="current-temp"></span></p>
+                    <figure>
+                        <img id="weather-icon" src="" alt="">
+                        <figcaption></figcaption>
+                    </figure>
+                    <span id="max-temp"></span>
+                    <span id="min-temp"></span>
+                    <span id="humidity"></span>
+                </div>
+            </div>
+
+            <div class="weather-forecast">
+                <h2>Weather Forecast</h2>
+                <div id="forecast"></div>
+            </div>
+
+        </section>
+
+        <section id="spotlights"></section>
+        
+    </main>
+
+        <footer>
+            <div id="address">
+                <span>Lagos Chamber of Commerce</span>
+                <p>18 Allen avenue <br> Ikeja, Lagos 31309 <br> info@lcc.org <br>(234) 555-2300</p>
+            </div>
+        <div class="social">
+            <a href="https://x.com/?lang=en" target="_blank"><img src="images/twitter-x.svg" alt="Twitter" width="16" height="16"></a>
+            <a href="https://github.com/" target="_blank"><img src="images/github.svg" alt="github" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
+        </div>
+
+        <div>
+            <p>WDD231 Class Project<br> Nweke Joshua <br> ©️ <span id="currentyear"></span> Lagos Chamber of Commerce</p>
+            <p id="lastmodified"></p>
+        </div>
+    </footer>
+
+</body>
+</html>

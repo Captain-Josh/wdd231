@@ -49,6 +49,21 @@
     display: none;
 }
 
+
+/********************* Home*********************/
+
+
+#hero-h1{
+    top: 50px;
+    left: 50px;
+    font-size: 40px;
+}
+#home-btn{
+    bottom: 60px;
+    right: 40px;
+}
+
+
 /********************* FOOTER *********************/
 footer{
     display: grid;
