@@ -410,8 +410,10 @@ background-color: var(--accent6-color);
 
 
 /********************* Join *********************/
-form {
-    margin: 0 2%;
+form {  
+    margin: 0 auto;
+    max-width: 600px;
+
   
     label {
       display: block;
@@ -439,10 +441,10 @@ form {
         max-width: 400px;    }
 
     textarea{
-        height: 100px;;
+        height: 100px;
 }
   
-    input:required {border-left-color: var(--accent5-color)}
+    input:required {border-left-color: var(--accent5-color);}
     input:focus {border-left-color: var(--accent1-color); outline:none;}
     input:required:valid{border-left-color: var(--accent4-color);}
   
@@ -453,7 +455,6 @@ form {
         color: var(--primary-color);
         border-radius: 15px;
         padding: 11px 18px;
-        margin: 32px 0;
         font-size: 18px;
         width: 96%;
         max-width: 400px;
