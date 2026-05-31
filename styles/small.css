@@ -224,7 +224,7 @@ dialog {
   box-shadow: 0 0 3rem #777;
   width: 90%;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 0 a;
 }
 
 ::backdrop {

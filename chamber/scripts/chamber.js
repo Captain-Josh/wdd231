@@ -236,3 +236,110 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
     };
 })
+
+
+document.addEventListener("DOMContentLoaded", async() => {
+    if (document.getElementsByTagName("body")[0].id === "join-page") {
+
+
+        const form = document.querySelector("form");
+        const timestampField = document.getElementById("timestamp");
+
+        form.addEventListener("submit", () => {
+            timestampField.value = new Date().toISOString();
+    })
+
+            const url = "data/membership.json"
+            let membershipData = [];
+            async function loadMembership() {
+                try{
+                    const response = await fetch(url);
+                    const data = await response.json();
+                    membershipData = data;
+                    console.log(membershipData);
+                }
+                catch(error){
+                    console.error("Error Loading memberships:", error);
+                }
+                
+            }
+            
+            function displayMembershipDetails(level) {
+            const modal = document.getElementById("membership-details");
+
+            const membership = membershipData.find(item => item.level === level);
+
+            if (!membership) return;
+
+            modal.innerHTML = `
+                <button id="closeModal">❌</button>
+                <h2>${membership.title}</h2>
+                <p><strong>Cost:</strong> ${membership.cost}</p>
+                <p>${membership.description}</p>
+
+                <p><strong>Benefits:</strong></p>
+                <ul>
+                ${membership.benefits.map(item => `<li>${item}</li>`).join("")}
+                </ul>
+            `;
+
+            modal.showModal();
+
+            document.getElementById("closeModal").addEventListener("click", () => {
+                modal.close();
+            });
+            }
+
+            
+            await loadMembership();
+
+            
+            document.getElementById("btn-np").addEventListener("click", () => {
+            displayMembershipDetails("np");
+            });
+
+            document.getElementById("btn-bronze").addEventListener("click", () => {
+            displayMembershipDetails("bronze");
+            });
+
+            document.getElementById("btn-silver").addEventListener("click", () => {
+            displayMembershipDetails("silver");
+            });
+
+            document.getElementById("btn-gold").addEventListener("click", () => {
+            displayMembershipDetails("gold");
+            });
+
+
+    }
+    });
+
+
+document.addEventListener("DOMContentLoaded", ()=>{
+    if(document.getElementsByTagName("body")[0].id === "thankyou-page"){
+
+        const getString = window.location.search;
+        console.log(getString);
+
+        const myInfo = new URLSearchParams(getString);
+
+        // const myInfo = new URLSearchParams(window.location.search);
+        // console.log(myInfo);
+
+        document.querySelector("#results").innerHTML = `
+        <p><strong>Name:</strong> ${myInfo.get("first")} ${myInfo.get("last")}</p>
+        <p><strong>Email:</strong> ${myInfo.get("email")}</p>
+        <p><strong>Phone:</strong> ${myInfo.get("phone")}</p>
+        <p><strong>Title:</strong> ${myInfo.get("orgtitle")}</p>
+        <p><strong>Organization:</strong> ${myInfo.get("organization")}</p>
+        <p><strong>Membership:</strong> ${myInfo.get("membership")}</p>
+        <p><strong>Description:</strong> ${myInfo.get("description")}</p>
+        <p><strong>Submitted:</strong> ${myInfo.get("timestamp")}</p>
+        <h2>Thank you for joining the Lagos Chamber of Commerce!</h2>
+        `
+
+    }
+
+})
+
+

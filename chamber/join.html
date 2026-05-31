@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apply to Join the Lagos Chamber of Commerce and gain access to networking opportunities and economic growth resources in Lagos">
+    <meta name="author" content="Nweke Joshua">
+    <meta property="og:title" content="Join Lagos Chamber of Commerce">
+    <meta property="og:description" content="Become a member of the Lagos Chamber of Commerce. Connect and grow your organization">
+    <meta property="og:url" content="https://captain-josh.github.io/wdd231/chamber/join.html">
+    <meta property="og:image" content="https://captain-josh.github.io/wdd231/chamber/images/og-image.png">
+    <title>Lagos Chamber of Commerce| Join</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="images/logo.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Miranda+Sans:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Titillium+Web:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+
+    <script src="scripts/chamber.js" defer></script>
+    
+</head>
+<body id="join-page">
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Project Logo">
+            <span>Lagos Chamber of Commerce</span>
+        </div>
+        <div id="ham-menu">
+            <div id="bars"></div>
+        </div>
+
+        <nav  class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html" >Directory</a></li>
+                <li class="current"><a href="join.html">Join</a></li>
+                <li><a href="dicover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <ul id="nav-mobile">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li class="current"><a href="join.html">Join</a></li>
+        <li><a href="dicover.html">Discover</a></li>
+    </ul>
+    <main>
+        <div id="container">
+
+            <form method="get" action="thankyou.html">
+            <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
+            <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+            <label>Organizational Title<input type="text" name="orgtitle" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}"></label>
+            <label>Cell Phone <input type="tel" name="phone"  autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234" ></label>
+            <label>Email <input type="email" name="email" required placeholder="john89@gmail.com"  title="Your Email" autocomplete="email"></label>
+            
+            <label>Organization Name<input type="text" name="organization" required autocomplete="organization"></label>
+            
+            <label>
+                Membership Level
+                <select name="membership" required>
+                <option value="">Select</option>
+                <option value="np">NP Membership</option>
+                <option value="bronze">Bronze</option>
+                <option value="silver">Silver</option>
+                <option value="gold">Gold</option>
+                </select>
+            </label>
+            
+            <label>Description<textarea name="description"></textarea></label>
+            <input type="hidden" name="timestamp" id="timestamp">
+            <input type="submit" value="Join the Chamber">
+            </form>
+    
+            
+        
+            <div class="cards" id="membership-cards">
+                <h2>Membership Levels</h2>
+    
+            <div class="card">
+                <h3>NP Membership</h3>
+                <button id="btn-np">Learn More</button>
+            </div>
+    
+            <div class="card">
+                <h3>Bronze Membership</h3>
+                <button id="btn-bronze">Learn More</button>
+            </div>
+    
+            <div class="card">
+                <h3>Silver Membership</h3>
+                <button id="btn-silver">Learn More</button>
+            </div>
+    
+            <div class="card">
+                <h3>Gold Membership</h3>
+                <button id="btn-gold">Learn More</button>
+            </div>
+            </div>
+    
+            
+    <dialog id="membership-details"></dialog>
+        </div>    
+        
+    </main>
+
+
+
+        <footer>
+            <div id="address">
+                <span>Lagos Chamber of Commerce</span>
+                <p>18 Allen avenue <br> Ikeja, Lagos 31309 <br> info@lcc.org <br>(234) 555-2300</p>
+            </div>
+        <div class="social">
+            <a href="https://x.com/?lang=en" target="_blank"><img src="images/twitter-x.svg" alt="Twitter" width="16" height="16"></a>
+            <a href="https://github.com/" target="_blank"><img src="images/github.svg" alt="github" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
+        </div>
+
+        <div>
+            <p>WDD231 Class Project<br> Nweke Joshua <br> ©️ <span id="currentyear"></span> Lagos Chamber of Commerce</p>
+            <p id="lastmodified"></p>
+        </div>
+    </footer>
+
+</body>
+</html>

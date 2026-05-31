@@ -1,0 +1,47 @@
+
+
+ [
+    {
+      "level": "np",
+      "title": "Non Profit Membership",
+      "cost": "Free",
+      "description": "For nonprofit organizations.",
+      "benefits": [
+        "Community events",
+        "Basic networking opportunities"
+      ]
+    },
+    {
+      "level": "bronze",
+      "title": "Bronze Membership",
+      "cost": "₦50,000/year",
+      "description": "Entry-level membership.",
+      "benefits": [
+        "Business listing",
+        "Networking access"
+      ]
+    },
+    {
+      "level": "silver",
+      "title": "Silver Membership",
+      "cost": "₦100,000/year",
+      "description": "Mid-tier benefits.",
+      "benefits": [
+        "Event discounts",
+        "Advertising",
+        "Training programs"
+      ]
+    },
+    {
+      "level": "gold",
+      "title": "Gold Membership",
+      "cost": "₦200,000/year",
+      "description": "Premium membership.",
+      "benefits": [
+        "Top homepage spotlight",
+        "Exclusive events",
+        "Premium advertising"
+      ]
+    }
+  ]
+
