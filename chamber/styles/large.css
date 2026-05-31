@@ -65,7 +65,6 @@
 
 
 /********************* Join *********************/
-form {
   
     input[type=text],
     input[type=tel],
@@ -78,7 +77,7 @@ form {
     }
 
     textarea{
-    height: 150px;;
+    height: 150px;
 }
   
     input[type=submit] {  
@@ -86,7 +85,7 @@ form {
 
     }
 
-}
+
 
 
 #container{
@@ -100,7 +99,6 @@ footer{
     justify-content: space-between;
     gap: 10px;
 }
-
 
 
 }
