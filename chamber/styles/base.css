@@ -411,10 +411,7 @@ background-color: var(--accent6-color);
 
 /********************* Join *********************/
 form {  
-    margin: 0 auto;
-    max-width: 600px;
-
-  
+   
     label {
       display: block;
       font-size: 15px;
