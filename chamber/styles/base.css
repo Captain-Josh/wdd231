@@ -354,7 +354,7 @@ ul a{
     gap: 10px;
 }
 
-.now-list .grid-member {
+.now-list .mem-info{
     display: grid;
     grid-template-columns: 1fr;
     padding: 12px;

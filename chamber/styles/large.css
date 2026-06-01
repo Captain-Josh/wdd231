@@ -41,7 +41,7 @@
     border-radius: 10px;
 }
 
-.now-list .grid-member {
+.now-list .mem-info {
     grid-template-columns: 1.5fr 2fr 1.5fr 2fr;
 }
 
