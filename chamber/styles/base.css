@@ -459,11 +459,12 @@ background-color: var(--accent6-color);
       appearance: none;
     }
 
-    #container {
+    #container, .h1 {
     display: grid;
     gap: 2rem;
     margin: 16px;
     }
+
 
 
     .card {
