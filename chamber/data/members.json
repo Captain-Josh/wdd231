@@ -3,7 +3,7 @@
     "name": "Lagos Tech Solutions",
     "address": "12 Marina Street, Lagos",
     "phone": "+234-801-123-4567",
-    "website": "https://lagostech.com",
+    "website": "lagostech.com",
     "image": "images/directory-1.webp",
     "level": 3,
     "description": "Leading provider of IT services."
@@ -12,7 +12,7 @@
     "name": "Green Farms Ltd",
     "address": "45 Farm Road, Ibadan",
     "phone": "+234-802-987-6543",
-    "website": "https://greenfarms.com",
+    "website": "greenfarms.com",
     "image": "images/directory-2.webp",
     "level": 2,
     "description": "Organic agricultural products supplier."
@@ -21,7 +21,7 @@
     "name": "City Bank Plc",
     "address": "88 Broad Street, Lagos",
     "phone": "+234-803-222-9999",
-    "website": "https://citybank.com",
+    "website": "citybank.com",
     "image": "images/directory-3.webp",
     "level": 3,
     "description": "Trusted financial services."
@@ -30,7 +30,7 @@
     "name": "Quick Logistics",
     "address": "22 Apapa Road, Lagos",
     "phone": "+234-804-555-1212",
-    "website": "https://quicklogistics.com",
+    "website": "quicklogistics.com",
     "image": "images/directory-4.webp",
     "level": 1,
     "description": "Fast delivery services."
@@ -39,7 +39,7 @@
     "name": "Bright Schools",
     "address": "10 Education Lane, Ikeja",
     "phone": "+234-805-667-3344",
-    "website": "https://brightschool.com",
+    "website": "brightschool.com",
     "image": "images/directory-5.webp",
     "level": 2,
     "description": "Quality education provider."
@@ -48,7 +48,7 @@
     "name": "Fresh Foods Market",
     "address": "55 Market Street, Surulere",
     "phone": "+234-806-112-8899",
-    "website": "https://freshfoods.com",
+    "website": "freshfoods.com",
     "image": "images/directory-6.webp",
     "level": 2,
     "description": "Daily fresh groceries."
@@ -57,7 +57,7 @@
     "name": "Elite Fitness Gym",
     "address": "3 Fitness Way, Lekki",
     "phone": "+234-807-998-7766",
-    "website": "https://elitegym.com",
+    "website": "elitegym.com",
     "image": "images/directory-7.webp",
     "level": 2,
     "description": "Modern fitness center."
@@ -66,7 +66,7 @@
     "name": "Prime Real Estate",
     "address": "9 Victoria Island, Lagos",
     "phone": "+234-808-445-6677",
-    "website": "https://primerealestate.com",
+    "website": "primerealestate.com",
     "image": "images/directory-8.webp",
     "level": 3,
     "description": "Premium real estate services."
@@ -75,7 +75,7 @@
     "name": "Sunrise Restaurant",
     "address": "14 Admiralty Way, Lekki",
     "phone": "+234-809-223-1111",
-    "website": "https://sunriserestaurant.com/",
+    "website": "sunriserestaurant.com/",
     "image": "images/directory-9.webp",
     "level": 2,
     "description": "Local and international cuisines."
@@ -84,7 +84,7 @@
     "name": "NextGen Electronics",
     "address": "5 Computer Village, Ikeja",
     "phone": "+234-810-999-3333",
-    "website": "https://nextgenelectronics.com",
+    "website": "nextgenelectronics.com",
     "image": "images/directory-10.webp",
     "level": 1,
     "description": "Affordable electronics and gadgets."
@@ -93,7 +93,7 @@
     "name": "Blue Ocean Travels",
     "address": "7 Airport Road, Lagos",
     "phone": "+234-811-777-2222",
-    "website": "https://blueoceantravels.com",
+    "website": "blueoceantravels.com",
     "image": "images/directory-11.webp",
     "level": 2,
     "description": "Travel and tourism specialists."
@@ -102,7 +102,7 @@
     "name": "Blue Ocean Travels",
     "address": "7 Airport Road, Lagos",
     "phone": "+234-811-777-2222",
-    "website": "https://blueoceantravels.com",
+    "website": "blueoceantravels.com",
     "image": "images/directory-11.webp",
     "level": 2,
     "description": "Travel and tourism specialists."

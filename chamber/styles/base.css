@@ -181,7 +181,7 @@ ul a{
     background-color: var(--accent3-color);
 }
 
-#home-grid{
+#home-grid, #spotlights{
     display: grid;
 	gap: 10px;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -240,20 +240,12 @@ ul a{
     display: block;
 }
 
-#spotlights{
-    display: grid;
-	gap: 10px;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    align-items: center;
-    justify-content: center;
-}
 
 #spot-section{
     display: grid;
-    grid-template-columns: 150px 1fr ;
+    grid-template-columns: 120px 1fr ;
     gap: 20px;
     align-items: center;
-    border: var(--border-color);
     border-radius: 12px;
     margin: 10px 0;
     overflow: hidden;
@@ -262,17 +254,15 @@ ul a{
 #spot-section .top{
     grid-column: 1/3;
     border-bottom: var(--border);
-    margin-bottom: 10px;
 }
 
 #spot-section img{
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     object-fit: cover;
 }
 #spot-section .info{
-    font-size: 14px;
-    line-height: 1.5;
+
     text-align: start;
 
 }
@@ -283,9 +273,7 @@ ul a{
 /********************* Directory*********************/
 #directory{
     text-align: center;
-    font-size: 30px;
     color: var(--tertiary-color);
-    margin: 10px 0;
 }
 
 
@@ -293,8 +281,6 @@ ul a{
 	display: grid;
 	gap: 10px;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    align-items: center;
-    justify-content: center;
     padding: 10px;
     border:var(--border);
     background-color: var(--accent3-color);
@@ -312,14 +298,11 @@ ul a{
 .grid-member strong {
     color: var(--secondary-color);
     margin-right: 6px;
-    font-size: 18px;
-    font-weight: 500;
 }
 .grid-member img{
     margin-top: 10px;
     width: 100%;
     border-radius: 12px;
-    box-shadow:0 4px 10px rgba(0, 0, 0, 0.4);
     object-fit: cover;
 
 }

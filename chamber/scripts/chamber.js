@@ -217,7 +217,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
                      loading="lazy">
                 <div class = "info">
                 <p><strong>Phone: </strong> ${member.phone}</p>
-                <p><strong>Visit Website:</strong> ${member.website}</p>
+                <p><strong>URL:</strong> ${member.website}</p>
                 <p id="mem-level"><strong>Membership:</strong> ${getLevel(member.level)}</p>
                 </div>
                  </section>`; 
