@@ -184,7 +184,6 @@ ul a{
 #home-grid, #spotlights{
     display: grid;
 	gap: 10px;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 #home-grid h2{
@@ -243,10 +242,10 @@ ul a{
 
 #spot-section{
     display: grid;
-    grid-template-columns: 120px 1fr ;
+    grid-template-columns: 1fr 2fr ;
     gap: 20px;
     align-items: center;
-    border-radius: 12px;
+    border-radius: 10px;
     margin: 10px 0;
     overflow: hidden;
 }
@@ -257,8 +256,8 @@ ul a{
 }
 
 #spot-section img{
-    width: 120px;
-    height: 120px;
+    width: 100%;
+    height: auto;
     object-fit: cover;
 }
 #spot-section .info{
@@ -267,7 +266,8 @@ ul a{
 
 }
 #spot-section p{
-    margin: 4px;
+    line-height: 2.0;
+    font-size: 17px;
     word-break: break-all;
 }
 /********************* Directory*********************/
@@ -487,6 +487,55 @@ background-color: var(--accent6-color);
     border: var(--border-color);
     border-radius: 6px;
   }
+
+  /********************* Discover *********************/
+    #all-places div{
+        margin: 16px 8px;
+        border: var(--border);
+        border-radius: 8px;
+        overflow: hidden;
+
+        display: grid;
+        grid-template-areas: 
+        "name"
+        "cost"
+        "photo"
+        "description"
+        "location"
+        ;
+    }
+    #all-places div h2{
+    margin: 16px 10px;
+    grid-area:name;
+    }
+    #all-places div h3{
+    margin: 16px 10px;
+    grid-area:cost;
+    }
+    #all-places div img{
+        width: 100%;
+        grid-area: photo;
+    }
+    #all-places div p{
+        margin: 16px 10px;
+        grid-area: description;
+    }
+    #all-places div address{
+        margin: 16px 10px;
+        grid-area: location;
+    }
+
+    .visit-box {
+        background-color: var(--accent4-color);
+        color: var(--primary-color);
+        border-left: 5px solid #2D6A4F;
+        padding: 10px;
+        margin: 20px 0;
+        font-size: 16px;
+    }
+
+
+
 /********************* FOOTER *********************/
 footer{
     padding: 16px 10px;

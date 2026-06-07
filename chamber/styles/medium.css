@@ -1,0 +1,25 @@
+@media only screen and (min-width:640px) {
+
+
+/********************* Discover*********************/
+
+ #all-places div{
+        grid-template-columns: 300px 1fr;
+        gap: 10px;
+        grid-template-areas: 
+        "photo name"
+        "photo cost"
+        "photo description"
+        "photo location"
+        ;
+    }
+    
+ #all-places div img{
+    width: 300px;
+ }
+  #all-places div h2,#all-places div h3, #all-places div p, #all-places div address{
+    margin: 2px 10px;
+  
+    }
+   
+}

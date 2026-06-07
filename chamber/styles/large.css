@@ -1,4 +1,4 @@
-@media only screen and (min-width:700px) {
+@media only screen and (min-width:1024px) {
     header,main,nav,footer{
         max-width: 1200px;
         margin: 0 auto;
@@ -48,7 +48,24 @@
 .now-list strong{
     display: none;
 }
+#spot-section{
+    grid-template-columns: 120px 1fr ;
+    gap: 20px;  
+}
 
+
+#spot-section img{
+    width: 100%;
+    object-fit: cover;
+}
+#spot-section .info{
+    text-align: start;
+}
+
+#spot-section p{
+    margin: 4px;
+    word-break: break-all;
+}
 
 /********************* Home*********************/
 
@@ -61,6 +78,17 @@
 #home-btn{
     bottom: 60px;
     right: 40px;
+}
+#home-grid {
+	grid-template-columns: repeat(3, 1fr);
+}
+#spotlights{
+    	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+#spot-section img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
 }
 
 
@@ -92,6 +120,11 @@
      grid-template-columns: 1fr 1fr;
 }
 
+/********************* FOOTER *********************/
+ #all-places {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+    }
 /********************* FOOTER *********************/
 footer{
     display: grid;
