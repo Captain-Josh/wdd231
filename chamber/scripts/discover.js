@@ -21,6 +21,7 @@ function displayItems(places){
         const photo = document.createElement("img");
         photo.src =`images/${x.photo_link}`;
         photo.alt = x.name;
+        photo.loading = "lazy";
         card.appendChild(photo);
 
         const title = document.createElement("h2");
@@ -38,6 +39,18 @@ function displayItems(places){
         const description = document.createElement("p");
         description.innerText= x.description;
         card.appendChild(description);
+
+        
+        const button = document.createElement("button");
+        button.textContent = "Learn More";
+        button.classList.add("learn-btn");
+        
+        button.addEventListener("click", () => {
+            alert(`More about ${x.name}`);
+        });
+        card.appendChild(button);
+
+
 
         showHere.appendChild(card);
 

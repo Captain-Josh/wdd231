@@ -125,6 +125,13 @@
      display: grid;
      grid-template-columns: 1fr 1fr;
     }
+
+    
+ #all-places img:hover {
+        transform: scale(1.05);
+        filter: brightness(1.1);
+    }
+
 /********************* FOOTER *********************/
 footer{
     display: grid;
