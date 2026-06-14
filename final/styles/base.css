@@ -1,0 +1,246 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a,
+button {
+    -webkit-tap-highlight-color: transparent;
+}
+
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #000000;
+    --tertiary-color: #a4161a;
+    --accent1-color: #000080;
+    --accent2-color: #FFD700;
+    --accent3-color: #ffffff;
+    --accent4-color: #a4161a;
+    --accent5-color: #2D6A4F;
+    --accent6-color: #eee;
+    --border: 2px solid rgb(0 0 0/0.2);
+    --border-color: 2px solid #ddd;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Barlow', sans-serif;
+}
+
+/********************* Hamburger Menu *********************/
+#ham-menu {
+    width: 44px;
+    height: 44px;
+    background: var(--accent5-color);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+
+#bars {
+    width: 80%;
+    height: 3px;
+    background-color: var(--accent3-color);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    transition: all 0.4s ease;
+}
+
+#bars::before,
+#bars::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: var(--accent3-color);
+    position: absolute;
+    transform: translateY(-8px);
+}
+
+#bars::after {
+    transform: translateY(8px);
+}
+
+.show #bars {
+    background-color: transparent;
+    transform: rotate(180deg);
+}
+
+.show #bars::before {
+    transform: translate(0) rotate(-45deg);
+}
+
+.show #bars::after {
+    transform: translate(0) rotate(45deg);
+}
+
+
+
+
+/********************* Header *********************/
+header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border: var(--border-color);
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.logo img {
+    width: 60px;
+    height: auto;
+}
+
+.logo span {
+    font-size: 25px;
+    color: var(--tertiary-color);
+
+}
+
+
+/********************* Navigation*********************/
+.navigation {
+    display: none;
+}
+
+#nav-mobile {
+    display: block;
+    position: absolute;
+    background-color: var(--accent3-color);
+    width: 100%;
+    top: -100%;
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 30;
+}
+
+#nav-mobile.show {
+    top: 80px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul a {
+    display: block;
+    padding: 10px;
+    color: var(--secondary-color);
+    text-align: center;
+    text-decoration: none;
+}
+
+.current a::before {
+    content: "✔️ ";
+}
+
+a:hover {
+    background-color: var(--accent5-color);
+    color: var(--primary-color);
+}
+/********************* Home Page *********************/
+.hero{
+    padding: 20px;
+    background-image: url("../images/hero-image.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.5;
+}
+
+.hero h1,
+.hero p,
+.hero input,
+.hero button {
+  position: relative;
+}
+
+.hero input {
+  width: 80%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.hero button {
+  padding: 10px 15px;
+  margin-top: 10px;
+  background: #0b3d91;
+  color: white;
+  border: none;
+}
+
+
+
+/********************* FOOTER *********************/
+/********************* FOOTER *********************/
+/********************* FOOTER *********************/
+/********************* FOOTER *********************/
+/********************* FOOTER *********************/
+/********************* FOOTER *********************/
+/********************* FOOTER *********************/
+/********************* FOOTER *********************/
+/********************* FOOTER *********************/
+/********************* FOOTER *********************/
+/********************* FOOTER *********************/
+footer{
+  
+    padding: 16px 10px;
+    line-height: 30px;
+    text-align: center;
+}
+
+footer p{
+    color:var(--tertiary2-color);
+    background-color: var(--accent6-color);
+    font-weight: bolder;
+}
+.social{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+
+}
+.social a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+}
+.social a:hover{
+   background-color: var(--accent2-color);
+}
+
+.social img{
+    width: 22px;
+    height: 22px;
+}

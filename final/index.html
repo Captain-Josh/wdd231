@@ -1,26 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pharmaceutical awareness and health education platform. Learn about drugs, health tips and services.">
+    <meta name="description"
+        content="Pharmaceutical awareness and health education platform. Learn about drugs, health tips and services.">
     <meta name="author" content="Nweke Joshua">
     <meta property="og:title" content="PharmaCare Hub">
-    <meta property="og:description" content="Pharmaceutical awareness and health education platform. Learn about drugs, health tips and services.">
+    <meta property="og:description"
+        content="Pharmaceutical awareness and health education platform. Learn about drugs, health tips and services.">
     <meta property="og:url" content="https://captain-josh.github.io/wdd231/final/index.html">
-    <meta property="og:image" content="https://captain-josh.github.io/wdd231/final/images/og-image.png">
+    <meta property="og:image" content="https://captain-josh.github.io/wdd231/final/images/og-image.webp">
     <title>PharmaCare Hub</title>
     <link rel="stylesheet" href="styles/normalize.css">
-    <!-- <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/large.css"> -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
     <link rel="icon" href="images/logo.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Black+Ops+One&family=Miranda+Sans:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Titillium+Web:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Black+Ops+One&family=Miranda+Sans:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Titillium+Web:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <script src="scripts/main.js" defer></script>
 
 </head>
+
 <body>
-    <img src="images/logo.png" alt="">
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Final Project Logo">
+            <span>PharmaCare Hub</span>
+        </div>
+        <div id="ham-menu">
+            <div id="bars"></div>
+        </div>
+
+        <nav class="navigation">
+            <ul>
+                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="drug.html">Drug Info</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <ul id="nav-mobile">
+        <li class="current"><a href="index.html">Home</a></li>
+        <li><a href="drug.html">Drug Info</a></li>
+        <li><a href="services.html">Services</a></li>
+    </ul>
+
+    <main>
+        <section class="hero">
+            <h1>Your Health, our Priority</h1>
+            <p>Reliable drug information and health education.</p>
+
+            <input type="text" placeholder="Search Drug">
+            <button>Get Started</button>
+        </section>
+
+        <section class="intro">
+            <p>PharmaCare Hub helps you access trusted medical information, understand medication, and locate healthcare services easily</p>
+        </section>
+
+        <section class="health-tips">
+            <h2>Health Tips</h2>
+            <div class="tips-container">
+                <article class="card">Tip 1</article>
+                <article class="card">Tip 2</article>
+                <article class="card">Tip 3</article>
+            </div>
+        </section>
+
+        <section class="services">
+            <h2>Our Services</h2>
+            <div class="service-container">
+                <div class="card">Drug Information</div>
+                <div class="card">Health Education</div>
+                <div class="card">Pharmacy Locator</div>
+            </div>
+        </section>
+        <footer>
+        <div class="social">
+            <a href="https://x.com/?lang=en" target="_blank"><img src="images/twitter-x.svg" alt="Twitter" width="16" height="16"></a>
+            <a href="https://github.com/" target="_blank"><img src="images/github.svg" alt="github" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
+        </div>
+        <p>©️ <span id="currentyear"></span> ⚕️PharmaCare Hub⚕️Nweke Joshua</p>
+        <p id="lastmodified"></p>
+    </footer>
+
+
+
+
+    </main>
+
 </body>
+
 </html>
