@@ -151,96 +151,249 @@ a:hover {
     background-color: var(--accent5-color);
     color: var(--primary-color);
 }
+
 /********************* Home Page *********************/
-.hero{
+.hero {
     padding: 20px;
     background-image: url("../images/hero-image.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: white;
+    color: var(--primary-color);
     text-align: center;
     padding: 60px 20px;
     position: relative;
-
 }
 
 .hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: black;
-  opacity: 0.5;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.5;
 }
 
 .hero h1,
 .hero p,
 .hero input,
 .hero button {
-  position: relative;
+    position: relative;
 }
 
 .hero input {
-  width: 80%;
-  padding: 10px;
-  margin-top: 10px;
+    width: 80%;
+    padding: 10px;
+    margin-top: 10px;
 }
 
 .hero button {
-  padding: 10px 15px;
-  margin-top: 10px;
-  background: #0b3d91;
-  color: white;
-  border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    background: var(--accent1-color);
+    color: var(--primary-color);
+    border: none;
+}
+
+
+section {
+    padding: 20px;
+}
+
+.tips-container,
+.service-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card {
+    padding: 15px;
+    border: var(--border);
+    background: var(--primary-color);
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+
+button:hover {
+    background: var(--accent5-color);
+    color: var(--primary-color);
+}
+
+.intro {
+    font-weight: 700;
+    word-spacing: 3px;
+}
+
+h2 {
+    color: var(--tertiary-color);
+    font-size: 25px;
+    margin-bottom: 10px;
 }
 
 
 
+/********************* Drug Page *********************/
+
+#drugContainer {
+    display: grid;
+    gap: 15px;
+}
+
+#drugContainer h3 {
+    color: var(--tertiary-color);
+    font-size: 25px;
+}
+
+#drugContainer p {
+    margin: 5px 0;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--accent5-color);
+    opacity: 0.9;
+}
+
+.modal-content {
+    background: var(--accent3-color);
+    margin: 10% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+}
+
+#closeBtn {
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+.last-viewed {
+    background: var(--accent6-color);
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+
+
+/********************* Services*********************/
+form {
+    width: 100%;
+}
+
+form label {
+    display: block;
+    font-size: 15px;
+    color: var(--tertiary-color);
+    padding-top: 5px;
+}
+
+form input[type=text],
+input[type=tel],
+input[type=email],
+textarea {
+    display: block;
+    margin: 2px 0 16px 0;
+    padding: 8px;
+    border: 1px solid #999;
+    border-radius: 8px;
+    border-left-width: 5px;
+    border-left-color: var(--secondary-color);
+    font-size: 16px;
+    color: var(--secondary-color);
+    width: 100%;
+}
+
+textarea {
+    height: 100px;
+}
+
+input:required {
+    border-left-color: var(--accent5-color);
+}
+
+input:required:valid {
+    border-left-color: var(--accent4-color);
+}
+
+input[type=submit] {
+    display: block;
+    border: none;
+    text-align: center;
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    border-radius: 15px;
+    padding: 11px 18px;
+    font-size: 18px;
+
+    width: 80%;
+    margin:10px auto;
+    -webkit-appearance: none;
+    appearance: none;
+}
+#container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+iframe{
+    width: 100%;
+}
+
+
 /********************* FOOTER *********************/
-/********************* FOOTER *********************/
-/********************* FOOTER *********************/
-/********************* FOOTER *********************/
-/********************* FOOTER *********************/
-/********************* FOOTER *********************/
-/********************* FOOTER *********************/
-/********************* FOOTER *********************/
-/********************* FOOTER *********************/
-/********************* FOOTER *********************/
-/********************* FOOTER *********************/
-footer{
-  
+
+footer {
+
     padding: 16px 10px;
     line-height: 30px;
     text-align: center;
 }
 
-footer p{
-    color:var(--tertiary2-color);
+footer p {
+    color: var(--tertiary2-color);
     background-color: var(--accent6-color);
     font-weight: bolder;
 }
-.social{
-    display:flex;
+
+.social {
+    display: flex;
     align-items: center;
     justify-content: center;
     column-gap: 10px;
 
 }
-.social a{
+
+.social a {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 44px;
     height: 44px;
 }
-.social a:hover{
-   background-color: var(--accent2-color);
+
+.social a:hover {
+    background-color: var(--accent2-color);
 }
 
-.social img{
+.social img {
     width: 22px;
     height: 22px;
 }

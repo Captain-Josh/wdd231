@@ -1,4 +1,4 @@
-@media only screen and (min-width:900px) {
+@media only screen and (min-width:800px) {
     header,main,nav,footer{
         max-width: 1200px;
         margin: 0 auto;
@@ -40,4 +40,58 @@
     border: var(--border-color);
     border-radius: 10px;
 }
+
+
+/********************* Home Page*********************/
+
+ .hero {
+    padding: 40px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+ .tips-container, .service-container {
+     flex-direction: row;
+ }
+
+ .card {
+    flex: 1;
+  }
+
+  /********************* Drug Page *********************/
+
+ #drugContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /********************* service *********************/
+
+    form input[type=text],
+    input[type=tel],
+    input[type=email],
+    textarea{
+        width: 100%;
+        padding: 15px;
+        max-width: 600px;
+    }
+
+    textarea{
+    height: 150px;
+}
+  
+    input[type=submit] {  
+      max-width: 600px; 
+
+    }
+
+    #container{
+    grid-template-columns: repeat(2, 1fr);
+
+}
+ 
+
+
+
 }

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore healthcare services, connect with pharmaceutical support, and find nearby pharmacies using PharmaCare Hub. Contact us for trusted health assistance.">
+    <meta name="author" content="Nweke Joshua">
+    <meta property="og:title" content="Health Services | PharmaCare Hub">
+    <meta property="og:description"
+        content="Access health services, contact professionals, and locate nearby pharmacies. Supporting better healthcare decisions with PharmaCare Hub.">
+    <meta property="og:url" content="https://captain-josh.github.io/wdd231/final/services.html">
+    <meta property="og:image" content="https://captain-josh.github.io/wdd231/final/images/og-image.webp">
+    <title>Health Services | PharmaCare Hub</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="images/logo.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Black+Ops+One&family=Miranda+Sans:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Titillium+Web:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <script type="module" src="scripts/main.js"></script>
+
+</head>
+
+<body id="service-page">
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Final Project Logo">
+            <span>PharmaCare Hub</span>
+        </div>
+        <div id="ham-menu">
+            <div id="bars"></div>
+        </div>
+
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="drug.html">Drug Info</a></li>
+                <li class="current"><a href="services.html">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <ul id="nav-mobile">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="drug.html">Drug Info</a></li>
+        <li class="current"><a href="services.html">Services</a></li>
+    </ul>
+
+    <main>
+
+        <section class="services">
+            <h2>Our Services</h2>
+            <div class="container">
+
+                <div class="service-container">
+                    <div class="card">Drug Information</div>
+                    <div class="card">Health Education</div>
+                    <div class="card">Pharmacy Locator</div>
+                </div>
+
+                <div id="container">
+                    <form method="get" action="thankyou.html">
+                        <label>First Name <input type="text" name="first" required autocomplete="given-name"
+                                title="Your First Name"></label>
+                        <label>Last Name <input type="text" name="last" required autocomplete="family-name"
+                                title="Your Last Name"></label>
+                        <label>Cell Phone <input type="tel" name="phone" autocomplete="tel"
+                                title="A Phone Number with dashes" required placeholder="987-555-1234"></label>
+                        <label>Email <input type="email" name="email" required placeholder="john89@gmail.com"
+                                title="Your Email" autocomplete="email"></label>
+
+                        <label>Message<textarea name="message" required
+                                title="Please enter your message"></textarea></label>
+
+                        <input type="submit" value="Submit your message">
+                    </form>
+
+                    <section class="map-section">
+                        <h2>Find Nearby Pharmacies</h2>
+
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d5622.8188541533655!2d-111.8166758207275!3d40.38991148053312!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sng!4v1781513181911!5m2!1sen!2sng"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    </section>
+
+            
+                </div>
+
+
+
+            </div>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://x.com/?lang=en" target="_blank"><img src="images/twitter-x.svg" alt="Twitter" width="16"
+                    height="16"></a>
+            <a href="https://github.com/" target="_blank"><img src="images/github.svg" alt="github" width="16"
+                    height="16"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="16"
+                    height="16"></a>
+        </div>
+        <p><a href="your-video-link">Project Demo Video</a></p>
+        <p>©️ <span id="currentyear"></span> ⚕️PharmaCare Hub⚕️Nweke Joshua</p>
+        <p id="lastmodified"></p>
+    </footer>
+</body>
+
+</html>

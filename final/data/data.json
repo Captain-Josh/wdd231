@@ -1,0 +1,93 @@
+
+[
+  {
+    "name": "Paracetamol",
+    "use": "Pain relief",
+    "sideEffect": "Nausea",
+    "warning": "Do not overdose"
+  },
+  {
+    "name": "Ibuprofen",
+    "use": "Reduce inflammation",
+    "sideEffect": "Stomach pain",
+    "warning": "Take with food"
+  },
+  {
+    "name": "Amoxicillin",
+    "use": "Treat infections",
+    "sideEffect": "Rash",
+    "warning": "Complete dosage"
+  },
+  {
+    "name": "Metformin",
+    "use": "Control blood sugar",
+    "sideEffect": "Diarrhea",
+    "warning": "Monitor glucose"
+  },
+  {
+    "name": "Aspirin",
+    "use": "Pain relief",
+    "sideEffect": "Bleeding",
+    "warning": "Avoid before surgery"
+  },
+  {
+    "name": "Cough Syrup",
+    "use": "Relieve cough",
+    "sideEffect": "Drowsiness",
+    "warning": "Avoid driving"
+  },
+  {
+    "name": "Vitamin C",
+    "use": "Boost immunity",
+    "sideEffect": "Stomach upset",
+    "warning": "Do not exceed dose"
+  },
+  {
+    "name": "Insulin",
+    "use": "Control diabetes",
+    "sideEffect": "Low sugar",
+    "warning": "Monitor levels"
+  },
+  {
+    "name": "Lisinopril",
+    "use": "Treat hypertension",
+    "sideEffect": "Dizziness",
+    "warning": "Check BP regularly"
+  },
+  {
+    "name": "Salbutamol",
+    "use": "Relieve asthma",
+    "sideEffect": "Tremor",
+    "warning": "Use as prescribed"
+  },
+  {
+    "name": "Omeprazole",
+    "use": "Reduce acid",
+    "sideEffect": "Headache",
+    "warning": "Take before meals"
+  },
+  {
+    "name": "Losartan",
+    "use": "Lower BP",
+    "sideEffect": "Fatigue",
+    "warning": "Avoid potassium foods"
+  },
+  {
+    "name": "Prednisolone",
+    "use": "Reduce inflammation",
+    "sideEffect": "Weight gain",
+    "warning": "Do not stop suddenly"
+  },
+  {
+    "name": "Azithromycin",
+    "use": "Treat infections",
+    "sideEffect": "Diarrhea",
+    "warning": "Finish dosage"
+  },
+  {
+    "name": "Furosemide",
+    "use": "Reduce fluid retention",
+    "sideEffect": "Dehydration",
+    "warning": "Monitor electrolytes"
+  }
+]
